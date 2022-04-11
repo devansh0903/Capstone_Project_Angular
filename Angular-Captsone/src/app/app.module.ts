@@ -8,6 +8,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MovieComponent } from './movie-component/movie-component.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
     BrowserModule, HttpClientModule, FormsModule, ReactiveFormsModule,RouterModule.forRoot([
       { path : '', component: MoviedetailsComponent},
       
-      ]), Ng2CarouselamosModule
+      ]), Ng2CarouselamosModule, NgbModule
 
   ],
   providers: [],

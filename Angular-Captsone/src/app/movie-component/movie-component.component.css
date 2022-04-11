@@ -1,18 +1,19 @@
 #container{
     padding:0;
-    background-color: black;
+    background-color: white;
     width: 100%;
-    height: 1000px;
+    height: 100%;
   }
   
   .movies{
     max-width:900px;
     height:100%;
-    background: #76832d;
+    background: black;
     font-family:'Arial';
     font-size:2em;
   }
   .text{
+    color:white;
     background-size: 900px 700px;
     background-position:0px,-50px ;
     width: 900px;
@@ -26,7 +27,6 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
     text-align: center;
-    padding-top:200px;
     font-style: oblique;
   
   }
