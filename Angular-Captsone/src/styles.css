@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.css';
+
 *{
     font-family: 'Courier New', Courier, monospace;
+    background-color: whitesmoke;
+    color: black;
 }
-    
+h1 {
+    text-align: center;
+}

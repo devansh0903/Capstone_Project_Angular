@@ -11,7 +11,7 @@ import { MovieComponentComponent } from './movie-component/movie-component.compo
 @NgModule({
   declarations: [
     AppComponent,
-    MovieComponentComponent
+    MovieComponentComponent, MoviedetailsComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule, ReactiveFormsModule,RouterModule.forRoot([
