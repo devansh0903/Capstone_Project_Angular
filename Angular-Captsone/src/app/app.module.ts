@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { MovieComponent } from './movie-component/movie-component.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
   ],
   imports: [
     BrowserModule,
-    Ng2CarouselamosModule
+    Ng2CarouselamosModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
