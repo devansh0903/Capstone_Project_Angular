@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { MovieComponentComponent } from './movie-component/movie-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MoviedetailsComponent
+    MovieComponentComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule, ReactiveFormsModule,RouterModule.forRoot([
