@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-movie-component',
+  selector: 'moviecomponent',
   templateUrl: './movie-component.component.html',
   styleUrls: ['./movie-component.component.css']
 })
-export class MovieComponent implements OnInit {
+export class MovieComponent{
 
   movies: Array<any> = [];
 
@@ -18,7 +18,7 @@ export class MovieComponent implements OnInit {
         genre: 'Comedy',
         actors: "Mr Guy",
         movieDuration: 999,
-        userRating: 'assets/megamind.jpeg'
+        moviePoster: 'assets/megamind.jpeg'
       },
       {
         movieId: 2,
@@ -27,19 +27,18 @@ export class MovieComponent implements OnInit {
         genre: 'Comedy',
         actors: "Da Babby",
         movieDuration: 999,
-        userRating: 'assets/bossbaby.jpg'
+        moviePoster: 'assets/bossbaby.jpg'
       },
       {
         movieId: 3,
-        movieTitle: 'Mnions',
+        movieTitle: 'Minions',
         movieSummary:'Holy shit yellow beans',
         genre: 'Comedy',
         actors: "Mr Guy",
         movieDuration: 999,
-        userRating: 'assets/minions.jpg'
+        moviePoster: 'assets/minions.jpg'
       },
     ]
   }
 
-}
 }
