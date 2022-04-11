@@ -6,25 +6,20 @@ import { AppComponent } from './app.component';
 import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { MovieComponentComponent } from './movie-component/movie-component.component';
 import { MovieComponent } from './movie-component/movie-component.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MovieComponentComponent, MoviedetailsComponent
+    MovieComponent, MoviedetailsComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule, ReactiveFormsModule,RouterModule.forRoot([
       { path : '', component: MoviedetailsComponent},
       
-      ])
-    MovieComponent
-  ],
-  imports: [
-    BrowserModule,
-    Ng2CarouselamosModule
+      ]), Ng2CarouselamosModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
