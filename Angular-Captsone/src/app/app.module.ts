@@ -7,6 +7,9 @@ import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MovieComponentComponent } from './movie-component/movie-component.component';
+import { MovieComponent } from './movie-component/movie-component.component';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+>>>>>>> 497cf678131d6ed7ef13aa60bde8e2e9fff0612b
 
 @NgModule({
   declarations: [
@@ -18,6 +21,11 @@ import { MovieComponentComponent } from './movie-component/movie-component.compo
       { path : '', component: MoviedetailsComponent},
       
       ])
+    MovieComponent
+  ],
+  imports: [
+    BrowserModule,
+    Ng2CarouselamosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,2 +1,29 @@
 <h1 style = "text-align: centre;"> Movies </h1>
-<<router-outlet> </router-outlet>
+<<router-outlet> </router-outlet>=======
+    <div ng2-carouselamos class="slides-wrapper" [items]="movies" [width]="900" [$prev]="prev" [$next]="next" [$item]="movie">
+    </div>
+  
+    <body>
+      <ng-template #prev>
+        <img src="" id="left" height=100 width=150>
+      </ng-template>
+      <ng-template #next>
+        <img src="" id="right" height=100 width=150>
+      </ng-template>
+      <ng-template #movie let-movie let-i="index">
+  
+        <div class="movies">
+          <img src="{{movie.moviePoster}}" height=500 width=900><br>
+          <div class="text">
+            <br>
+            {{movie.movieTitle}} <br>
+            {{movie.movieSummary}} <br>
+            {{movie.genre}} <br>
+            {{movie.movieDuration}} <br>
+        <button type ="button" class="btn btn-info">Watch {{ movie.movieTitle }} !!!</button>
+          </div>
+        </div>
+      </ng-template>
+    </body>
+  </div>
+>>>>>>> 497cf678131d6ed7ef13aa60bde8e2e9fff0612b
