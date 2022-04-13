@@ -9,11 +9,12 @@ import { RouterModule } from '@angular/router';
 import { MovieComponent } from './movie-component/movie-component.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AddmovieComponent } from './addmovie/addmovie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MovieComponent, MoviedetailsComponent
+    MovieComponent, MoviedetailsComponent, AddmovieComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule, ReactiveFormsModule,RouterModule.forRoot([
